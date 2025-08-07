@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Infinite Bouncing Ball</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #1e1e1e;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+      }
+
+      .ball {
+        width: 60px;
+        height: 60px;
+        background-color: #00ffcc;
+        border-radius: 50%;
+        position: relative;
+        animation: bounce 1s infinite ease-in-out;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-250px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>
